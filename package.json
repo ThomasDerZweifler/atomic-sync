@@ -1,7 +1,7 @@
 {
   "name": "atomic-sync",
   "main": "./lib/atom-sync",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Sync files bidirectionally between remote host and local over ssh+rsync",
   "keywords": [
     "sync",
