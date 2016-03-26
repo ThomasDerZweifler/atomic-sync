@@ -41,9 +41,10 @@ module.exports = ConfigHelper =
 
     sample:
         remote:
-            host: "HOSTNAME",
-            user: "USERNAME",
+            host: "HOSTNAME"
+            user: "USERNAME"
             path: "REMOTE_DIR"
+            port: "PORT_NUM"
         behaviour:
             uploadOnSave: true
             syncDownOnOpen: true
