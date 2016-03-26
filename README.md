@@ -30,9 +30,10 @@ atom-sync is an Atom package to sync files bidirectionally between remote host a
 
 ```
 remote:
-    host: "HOSTNAME",       # server name or ip or ssh host abbr in .ssh/config
-    user: "USERNAME",       # ssh username
+    host: "HOSTNAME"        # server name or ip or ssh host abbr in .ssh/config
+    user: "USERNAME"        # ssh username
     path: "REMOTE_DIR"      # e.g. /home/someone/somewhere
+    port: "PORT_NUM"        # optional; defaults to 22
 
 behaviour:
     uploadOnSave: true      # Upload every time you save a file
