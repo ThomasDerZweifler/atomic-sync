@@ -1,14 +1,10 @@
-# atom-sync package
+# atomic-sync package
 
-atom-sync is an Atom package to sync files bidirectionally between remote host and local over ssh+rsync. Inspired by [Sublime SFTP](http://wbond.net/sublime_packages/sftp).
+atomic-sync is an Atom package to sync files bidirectionally between remote host and local over ssh+rsync. It has been forked from [dingjie/atom-sync](https://github.com/dingjie/atom-sync). Inspired by [Sublime SFTP](http://wbond.net/sublime_packages/sftp).
 
-[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)[![Build Status](https://travis-ci.org/dingjie/atom-sync.svg?branch=master)](https://travis-ci.org/dingjie/atom-sync)
+> This package is currently in early development and has only been tested on Mac. Please kindly [try it out](http://atom.io/packages/atomic-sync) and [provide feedback](https://github.com/atymchuk/atomic-sync/issues/new).
 
-> This package is currently in early development and has only been tested on Mac. Please kindly [try it out](http://atom.io/packages/atom-sync) and [provide feedback](https://github.com/dingjie/atom-sync/issues/new).
-
-![atom-sync](https://cloud.githubusercontent.com/assets/586262/8085519/2b63a7c4-0fc3-11e5-930a-685b09fe7af3.gif)
-
-### Feature ###
+### Features ###
 * Sync over ssh+rsync — still [secure](http://www.sakana.fr/blog/2008/05/07/securing-automated-rsync-over-ssh/), but much [faster](http://stackoverflow.com/questions/20244585/what-is-the-difference-between-scp-and-rsync).
 * [Multi-Folder Projects](http://blog.atom.io/2015/04/15/multi-folder-projects.html) with different sync config files supported
 
@@ -67,4 +63,4 @@ option:
   * Create folders
   * Rename files/folders
   * What about deleting?
-* SSH parameters in config file e.g. public key, port et al.
+* SSH parameters in config file e.g. public key et al.
