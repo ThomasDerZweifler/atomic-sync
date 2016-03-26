@@ -27,13 +27,15 @@ module.exports = (opt = {}) ->
     dst = opt.dst
     config = opt.config
     flags = config?.flags ? 'avzpur'
+    port = config?.remote.port ? 22
     success = opt.success
     error = opt.error
     progress = opt.progress
+    shell = port == 22 ? 'ssh' : 'ssh -p ' + port
 
     rsync = new Rsync()
-        .shell 'ssh'
-        .flags 'avzpu'
+        .shell shell
+        .flags flags
         .source src
         .destination dst
         .output (data) ->
