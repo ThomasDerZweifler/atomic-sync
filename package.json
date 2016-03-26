@@ -9,7 +9,7 @@
     "rsync",
     "remote"
   ],
-  "repository": "https://github.com/atymchuk/atom-sync",
+  "repository": "https://github.com/atymchuk/atomic-sync",
   "license": "MIT",
   "engines": {
     "atom": ">=0.208.0 <2.0.0"
