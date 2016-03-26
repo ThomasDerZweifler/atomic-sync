@@ -31,7 +31,7 @@ module.exports = (opt = {}) ->
     success = opt.success
     error = opt.error
     progress = opt.progress
-    shell = port == 22 ? 'ssh' : 'ssh -p ' + port
+    shell = if port == 22 then 'ssh' else 'ssh -p ' + port
 
     rsync = new Rsync()
         .shell shell
